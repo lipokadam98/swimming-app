@@ -1,0 +1,19 @@
+<section class="bg-slate-600 p-4 rounded">
+  <form class="flex flex-col justify-center" [formGroup]="newPostGroup" (ngSubmit)="submitForm()">
+    <h1 class="text-white text-center">Bejegyzés hozzáadása</h1>
+    <mat-form-field>
+      <mat-label>Bejegyzés címe</mat-label>
+      <input matInput formControlName="title">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Bejegyzés szövege</mat-label>
+      <textarea formControlName="content"
+                cdkTextareaAutosize
+                cdkAutosizeMinRows="5"
+                cdkAutosizeMaxRows="10"
+                matInput placeholder="Bejegyzés szövege..."></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button type="submit" [disabled]="!newPostGroup.valid">Mentés</button>
+  </form>
+</section>

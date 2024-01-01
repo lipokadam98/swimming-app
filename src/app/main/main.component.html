@@ -1,8 +1,5 @@
 <section class="flex flex-col gap-5">
-    <app-blog-post></app-blog-post>
-    <app-blog-post></app-blog-post>
-    <app-blog-post></app-blog-post>
-    <app-blog-post></app-blog-post>
-    <app-blog-post></app-blog-post>
-    <app-blog-post></app-blog-post>
+    <div *ngFor="let post of posts$ | async">
+      <app-blog-post [post]="post"></app-blog-post>
+    </div>
 </section>

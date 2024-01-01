@@ -3,7 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    padding-top: 60px;
-    background-image: url('./assets/1454.jpg');
+body {
+  font-style: 'Roboto';
+  padding-top: 60px;
+  background-image: url("./assets/1454.jpg");
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
