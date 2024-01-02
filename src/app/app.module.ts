@@ -17,6 +17,7 @@ import {EditPostsComponent} from './blog-post/edit-posts/edit-posts.component';
 import {MatTableModule} from "@angular/material/table";
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatIconModule} from "@angular/material/icon";
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MatIconModule} from "@angular/material/icon";
     NavbarComponent,
     BlogPostComponent,
     NewPostComponent,
-    EditPostsComponent
+    EditPostsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

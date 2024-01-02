@@ -1,4 +1,8 @@
-.blog-card{
-    border-radius: 5px;
-    box-shadow: 0 0 2px gray;
+.blog-card {
+  border-radius: 5px;
+  box-shadow: 0 0 2px gray;
+
+  .image {
+    @apply rounded;
+  }
 }
